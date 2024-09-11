@@ -3,12 +3,12 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "23902408")
+    API_HASH  = os.environ.get("API_HASH", "6a36a4ef2f07d63aeba7b53b99c64d73")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7419697076:AAEUe_QbzJROnESSHlt39GLAxDVR5aenV5w") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")     
+    DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami244")     
     DB_URL  = os.environ.get("DB_URL","")
  
     # other configs
@@ -16,9 +16,9 @@ class Config(object):
     START_PIC   = os.environ.get("START_PIC", "")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'AshutoshGoswami24,BotzPW').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-    PORT = int(os.environ.get("PORT", ""))
+    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'Anime_Bloodline').split(',')
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002290310505"))
+    PORT = int(os.environ.get("PORT", "8080"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
